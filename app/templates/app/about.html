@@ -1,0 +1,62 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} About {% endblock title %}
+
+{% block banner-slider %} 
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image">
+     </div>
+     <div class="carousel-item">
+       <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image">
+     </div>
+     <div class="carousel-item">
+       <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image">
+     </div>
+     <div class="carousel-item">
+       <img src="{% static 'app/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner image">
+     </div>
+   </div>
+ </div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center"> About Us </h2>
+    <div class="row container">
+        <p class="fs-4 text-center"> 
+            Overview:
+            Neel Dairy is a dynamic Public Limited Company headquartered in Pune, 
+            Maharashtra, India. Established in 2022, the company has rapidly emerged 
+            as one of the leading entities in Pune's business landscape.<br>
+            
+            Corporate Office:
+            Situated in the vibrant city of Pune, Maharashtra, our corporate office 
+            serves as the nerve center for strategic planning, innovation, and operational excellence.
+        </p>
+    </div>
+       <br>
+    <h2 class="text-center"> Mission </h2>
+    <div class="row container">
+        <p class="fs-4 text-center"> Our mission is to deliver unparalleled value 
+            to our stakeholders while fostering sustainable growth and contributing 
+            positively to the communities we serve.<br>
+
+            Key Highlights:
+            Rapid Growth: Neel Dairy is recognized as one of the fastest-growing Public Listed Companies in Pune, reflecting our robust business model and strategic vision.
+            Market Leadership: Through a relentless focus on customer satisfaction and product innovation, we have established ourselves as leaders in our respective industry segments.
+            Commitment to Excellence: We are committed to fostering a culture of excellence and continuous improvement across all facets of our operations.
+        </p>
+    </div>   
+    <br>
+    <h2 class="text-center"> Vision </h2>
+    <div class="row container">
+        <p class="fs-4 text-center"> To be the preferred choice of customers, 
+            employees, and investors by delivering superior products, services, and returns.
+        </p>
+    </div> <br>         
+</div>
+
+{% endblock main-content %}
